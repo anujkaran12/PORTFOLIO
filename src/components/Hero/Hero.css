@@ -1,0 +1,172 @@
+.hero {
+  
+  color: var(--text-color);
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  
+  /* align-items: center; */
+}
+
+/* Top Row Layout */
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Avatar */
+.avatar {
+  overflow: hidden;
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: 4px solid var(--highlight-color);
+  padding: 8px;
+  height: 140px;
+  width: 140px;
+
+  object-fit: cover;
+}
+
+/* Header Right */
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  gap:.6rem;
+}
+
+.name {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--header-text);
+  word-spacing: 4px;
+}
+
+.role {
+  color: var(--subtext-color);
+  font-size: .85rem;
+  line-height: 1.3rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: .5rem;
+  
+  font-size: 1.3rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.social-icons a{
+  color: var(--header-text);
+}
+.social-icons i:hover{
+    transform: scale(1.1);
+    color: var(--highlight-color);
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.stats div h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--highlight-color);
+}
+
+.stats div p {
+  font-size: 12px;
+  color: var(--subtext-color);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.download-btn {
+  background: var(--highlight-color);
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-btn i{
+    margin-left: 10px;
+    
+    /* font-size: 2rem; */
+}
+.icon-btn {
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  padding: 14px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.icon-btn:hover{
+    color: var(--highlight-color);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  background: var(--panel-bg);
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.tab {
+  padding: 15px 40px;
+  border: none;
+  background: transparent;
+  color: var(--subtext-color);
+  font-weight: 500;
+  font-size: .9rem;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tab:hover{
+    color: var(--highlight-color);
+}
+.tab.active {
+    background-color: var(--bg-color);
+    color: var(--highlight-color);
+    /* background-color: red; */
+  /* color: #111; */
+}
+
+@media (max-width:768px){
+  .hero{
+    justify-content: center;
+  }
+  .hero-top{
+    flex-direction: column;
+
+  }
+}
