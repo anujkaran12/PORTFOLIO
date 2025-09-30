@@ -142,10 +142,12 @@ body {
   font-optical-sizing: auto;
   transition: all 0.3s ease;
 
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
   margin: 0;
   background-image: radial-gradient(

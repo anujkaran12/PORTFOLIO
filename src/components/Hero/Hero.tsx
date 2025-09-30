@@ -54,26 +54,12 @@ const Hero: FC<heroProp> = ({ currentTab, setCurrentTab }) => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="stats">
-          {/* <div>
-            <h3>10+</h3>
-            <p>Years of Experience</p>
-          </div>
-          <div>
-            <h3>20+</h3>
-            <p>Satisfied Clients</p>
-          </div>
-          <div>
-            <h3>30+</h3>
-            <p>Completed Projects</p>
-          </div> */}
-        </div>
+       
 
         {/* Buttons */}
         <div className="buttons">
           <a className="download-btn" href='/Anuj_Karan_Resume.pdf' download>
-            Download CV <i className="bi bi-download"></i>
+            Download Resume <i className="bi bi-download"></i>
           </a>
           <button
             className="icon-btn"
